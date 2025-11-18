@@ -1,20 +1,20 @@
-# Responsive Product Carousel (Slider)
+# اسلایدر محصول واکنش‌گرا
 
-This is a responsive product carousel (slider) built from scratch without any framework or library (just vanilla HTML, CSS, and JavaScript). It has few lines of code so is lightweight and fast. I used a class that you can create as many sliders as you want on a single webpage from it. All used images are free to use and from [Unsplash](https://unsplash.com/).
+این یک اسلایدر محصول واکنش‌گرا است که از ابتدا و بدون هیچ چارچوب یا کتابخانه‌ای ساخته شده است. این اسلایدر چند خط کد دارد، بنابراین سبک و سریع است. من از کلاسی استفاده کردم که به شما امکان می‌دهد هر تعداد اسلایدری که می‌خواهید در یک صفحه وب ایجاد کنید. همه تصاویر استفاده شده رایگان هستند و از [Unsplash](https://unsplash.com/) گرفته شده است.
 
-## How to Use It
+## نحوه استفاده از آن
 
-First, download the repository. Then, do the next steps.
+ابتدا این مخزن (repository) را دانلود کنید. سپس مراحل بعدی را انجام دهید.
 
-### HTML Part
+### بخش HTML
 
-In the **index.html** file of **this repository root folder**, you can find, edit, or add slider's HTML codes.
+در فایل **index.html** از **پوشه ریشه مخزن**، می‌توانید کدهای HTML اسلایدر را پیدا، ویرایش یا اضافه کنید.
 
-Just copy and paste the `div` tag with `slider-container` class attribute value and change it's `id` attribute value to your suitable one.
+فقط برچسب `div` را با مقدار ویژگی کلاس `slider-container` کپی و جایگذاری کنید و مقدار ویژگی `id` آن را به مقدار مناسب خود تغییر دهید.
 
-Each `li` tag with the class of `slider-item` is a single slide. You can add more slides, remove some of them, and edit slide (`slide-link-url`, `slide-image-file-url`, and `image alternative text`) as you wish.
+هر برچسب `li` با کلاس `slider-item` یک اسلاید واحد است. می‌توانید اسلایدهای بیشتری اضافه کنید، برخی از آنها را حذف کنید و اسلاید را (`slide-link-url` و `slide-image-file-url` و `image alternative text`) به دلخواه ویرایش کنید.
 
-#### Sample code:
+#### نمونه کد:
 
 ```
 <div class="slider-container" id="sample-slider">
@@ -61,18 +61,18 @@ Each `li` tag with the class of `slider-item` is a single slide. You can add mor
 </div>
 ```
 
-### JavaScript Part
+### بخش جاوا اسکریپت
 
-In **this repository** > **assets** > **js** > **slider.js** file, do the below step.
+در پوشه **assets** > پوشه **js**، فایل **slider.js** قرار دارد. می‌توانید کدهای جاوا اسکریپت اسلایدر را پیدا، ویرایش یا اضافه کنید.
 
-For creating each new slider, at the bottom of the codes before `}`, add the below line of code and change the values (or just edit the present codes):
+برای ایجاد هر اسلایدر جدید، در پایین کد قبل از `{`، خط کد زیر را اضافه کنید و مقادیر را تغییر دهید:
 
 ```
 new Slider('sample-slider', [576, 768, 992]).run();
 ```
 
-Instead of `sample-slider`, write your `slider-container` div tag `id` that you entered on the HTML part before.
+به جای `sample-slider`، شناسه `id` تگ div با کلاس `slider-container` خود را با که قبلاً در قسمت HTML وارد کرده‌اید، بنویسید.
 
-The `[576, 768, 992]` is an array of the media queries (breaking points) where the number of displayed slides at the same time, increases. Change it as needed.
+`[992 ,768 ,576]` آرایه‌ای از کوئری‌های رسانه‌ای (نقاط شکست) است که در آن تعداد اسلایدهای نمایش داده شده همزمان، افزایش می‌یابد. در صورت نیاز آن را تغییر دهید.
 
-Save files. That's it! You created a new slider.
+فایل‌ها را ذخیره کنید. همین! شما یک اسلایدر جدید ایجاد کردید.
