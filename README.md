@@ -1,4 +1,4 @@
-# Responsive Product Slider
+# Responsive Product Carousel (Slider)
 
 This is a responsive product slider built from scratch without any frameworks or libraries. This slider has a few lines of code, so it is lightweight and fast. I used a class that allows you to create as many sliders as you want on a web page. All images used are free and taken from [Unsplash](https://unsplash.com/).
 
