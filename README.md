@@ -1,20 +1,20 @@
-# اسلایدر محصول واکنش‌گرا
+# Responsive Product Slider
 
-این یک اسلایدر محصول واکنش‌گرا است که از ابتدا و بدون هیچ چارچوب یا کتابخانه‌ای ساخته شده است. این اسلایدر چند خط کد دارد، بنابراین سبک و سریع است. من از کلاسی استفاده کردم که به شما امکان می‌دهد هر تعداد اسلایدری که می‌خواهید در یک صفحه وب ایجاد کنید. همه تصاویر استفاده شده رایگان هستند و از [Unsplash](https://unsplash.com/) گرفته شده است.
+This is a responsive product slider built from scratch without any frameworks or libraries. This slider has a few lines of code, so it is lightweight and fast. I used a class that allows you to create as many sliders as you want on a web page. All images used are free and taken from [Unsplash](https://unsplash.com/).
 
-## نحوه استفاده از آن
+## How to use it
 
-ابتدا این مخزن (repository) را دانلود کنید. سپس مراحل بعدی را انجام دهید.
+First download this repository. Then follow the next steps.
 
-### بخش HTML
+### HTML Section
 
-در فایل **index.html** از **پوشه ریشه مخزن**، می‌توانید کدهای HTML اسلایدر را پیدا، ویرایش یا اضافه کنید.
+In the **index.html** file of the **root folder of the repository**, you can find, edit or add the slider HTML codes.
 
-فقط برچسب `div` را با مقدار ویژگی کلاس `slider-container` کپی و جایگذاری کنید و مقدار ویژگی `id` آن را به مقدار مناسب خود تغییر دهید.
+Just copy and paste the `div` tag with the `slider-container` class attribute value and change its `id` attribute value to your desired value.
 
-هر برچسب `li` با کلاس `slider-item` یک اسلاید واحد است. می‌توانید اسلایدهای بیشتری اضافه کنید، برخی از آنها را حذف کنید و اسلاید را (`slide-link-url` و `slide-image-file-url` و `image alternative text`) به دلخواه ویرایش کنید.
+Each `li` tag with the `slider-item` class is a single slide. You can add more slides, delete some, and edit the slide (`slide-link-url`, `slide-image-file-url`, and `image alternative text`) as you want.
 
-#### نمونه کد:
+#### Sample code:
 
 ```
 <div class="slider-container" id="sample-slider">
@@ -59,20 +59,21 @@
     <button type="button" class="slider-arrow-next">Next</button>
   </div>
 </div>
+
 ```
 
-### بخش جاوا اسکریپت
+### JavaScript section
 
-در پوشه **assets** > پوشه **js**، فایل **slider.js** قرار دارد. می‌توانید کدهای جاوا اسکریپت اسلایدر را پیدا، ویرایش یا اضافه کنید.
+In the **assets** folder > **js** folder, the **slider.js** file is located. You can find, edit, or add the slider JavaScript codes there.
 
-برای ایجاد هر اسلایدر جدید، در پایین کد قبل از `{`، خط کد زیر را اضافه کنید و مقادیر را تغییر دهید:
+To create each new slider, add the following line of code at the bottom of the code before `}` and change the values:
 
 ```
 new Slider('sample-slider', [576, 768, 992]).run();
 ```
 
-به جای `sample-slider`، شناسه `id` تگ div با کلاس `slider-container` خود را با که قبلاً در قسمت HTML وارد کرده‌اید، بنویسید.
+Replace `sample-slider` with the `id` of your `slider-container` div tag that you entered earlier in the HTML section.
 
-`[992 ,768 ,576]` آرایه‌ای از کوئری‌های رسانه‌ای (نقاط شکست) است که در آن تعداد اسلایدهای نمایش داده شده همزمان، افزایش می‌یابد. در صورت نیاز آن را تغییر دهید.
+`[992 ,768 ,576]` is an array of media queries (breakpoints) where the number of slides displayed at the same time will increase. Change it if necessary.
 
-فایل‌ها را ذخیره کنید. همین! شما یک اسلایدر جدید ایجاد کردید.
+Save the files. That's it! You've created a new slider.
